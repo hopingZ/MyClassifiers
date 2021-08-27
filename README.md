@@ -10,7 +10,7 @@ from classifiers import FisherClassifier, BayesClassifier
 
 classifier = FisherClassifier(
   dimension=d,  # 特征有几维
-  class_num=N   # 一共有几类
+  class_num=C   # 一共有几类
 )
 
 classifier.train(
