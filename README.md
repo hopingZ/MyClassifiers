@@ -9,8 +9,8 @@
 from classifiers import FisherClassifier, BayesClassifier
 
 classifier = FisherClassifier(
-  dimension=4,  # 特征有几维
-  class_num=3   # 一共有几类
+  dimension=d,  # 特征有几维
+  class_num=N   # 一共有几类
 )
 
 classifier.train(
