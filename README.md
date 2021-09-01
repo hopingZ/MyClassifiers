@@ -20,7 +20,6 @@ classifier = SVMClassifier(
     class_num=3,        # 一共有几类
     max_iter=100,       # 迭代次数
     C=1e3,              # 惩罚因子
-    toler=0.001,        # 机器学习实战里的?
     kernel_type="rbf",  # 核函数类型，可选 "poly", "rbf"
     # d=2,              # "poly"核的幂次
     sigma=1,            # "rbf"核的sigma
