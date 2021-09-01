@@ -8,10 +8,10 @@ class Classifier:
         pass
 
     def train(self, train_data, train_labels):
-        pass
+        raise NotImplementedError
 
     def predict(self, data):
-        pass
+        raise NotImplementedError
 
 
 class BayesClassifier(Classifier):
@@ -80,7 +80,7 @@ class FisherClassifier(Classifier):
 
     
 class SVMClassifier(Classifier):
-    def __init__(self, dimension, class_num, C, toler, max_iter, kernel_type="poly", sigma=None, d=1):
+    def __init__(self, dimension, class_num, C, max_iter, kernel_type="poly", sigma=None, d=1, toler=1e-3):
         super().__init__()
         self.dimension = dimension
         self.class_num = class_num
